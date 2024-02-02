@@ -1,8 +1,8 @@
 const apiKey = "481b87733a6cd06b36e49bbed10465a5";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-const searchBox = document.getElementById("cityInput"); // Changed the selector
-const searchBtn = document.getElementById("searchButton"); // Changed the selector
+const searchBox = document.getElementById("cityInput"); 
+const searchBtn = document.getElementById("searchButton");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city) {
@@ -50,7 +50,7 @@ function setWeatherIcon(weatherCondition) {
             weatherIcon.src = "images/snow.png";
             break;
         default:
-            weatherIcon.src = "images/unknown.png"; // Add a default icon for unknown conditions
+            weatherIcon.src = "images/unknown.png"; 
     }
 }
 
